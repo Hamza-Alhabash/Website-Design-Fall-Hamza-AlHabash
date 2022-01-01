@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    	<!-- Mobile Specific Meta -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Favicon-->
+      <link rel="shortcut icon" type="image/jpg" href="assets/images/favgs.jpg">
+      <!-- Author Meta -->
+      <meta name="author" content="Hamza Al-Habash">
+      <!-- Meta Description -->
+      <meta name="description" content="">
+      <!-- Meta Keyword -->
+      <meta name="keywords" content="video games, Playstation">
+      <!-- meta character set -->
+      <meta charset="UTF-8">
+      <title>Product-Details | GameStop</title>
+
+	<!--
+		CSS
+		============================================= -->
+    	<!-- Reset Style File -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    	<!-- Main Style File -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <!--light-slider.css------------->
+    <link rel="stylesheet" type="text/css" href="assets/css/lightslider.css">
+    <!--Jquery-------------------->
+    <script type="text/javascript" src="assets/js/Jquery.js"></script>
+    <!--lightslider.js--------------->
+    <script type="text/javascript" src="assets/js/lightslider.js"></script>
+
+  </head>
+
+
+<body>
+	<!-- Start Header Area -->
+  <header class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="index.html"><img src="assets/images/logo.svg" width="180px" alt="GameStop Homepage"></a></div>
+
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+
+          <li>
+            <a href="products.html" class="desktop-link">Products</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Products</label>
+            <ul>
+              <li><a href="products.html#ps-sec">Playstation</a></li>
+              <li><a href="products.html#xbx-sec">Xbox</a></li>
+              <li><a href="products.html#pc-sec">PC Gaming</a></li>
+              <li><a href="product-details.html">Product details</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="about.html" class="desktop-link">About Us</a>
+            <input type="checkbox" id="show-about">
+            <label for="show-about">About Us</label>
+            <ul>
+              <li><a href="about.html#contact">Contact Us</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="login.html">Login/Register</a></li>
+          <li><a href="cart.html">Cart</a></li>
+
+        </ul>
+      </div>
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Type Something to Search..." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </header>
+	<!-- End Header Area -->
+
+  	<!-- Start top banner Area -->
+    <div id="top-banner"></div>
+    <!-- End top banner Area -->
+
+    <!-- Start Product-Details Area -->
+    <main>
+      <div class="large-container single-product">
+        <div class="row">
+          <div class="col-2">
+            <img id="ProductImg" src="assets/images/prdct-details/ps5-v01.jpg"  width='100%' alt="PS5-Console">
+          <div class="small-img-row">
+            <div class="small-img-col">
+              <img class="small-img" src="assets/images/prdct-details/ps5-v01.jpg"  width='100%' alt="PS5-Console">
+              </div>
+              <div class="small-img-col">
+                <img class="small-img" src="assets/images/prdct-details/ps5-v02.jpg"  width='100%' alt="PS5-Console">
+                </div>
+                <div class="small-img-col">
+                  <img class="small-img" src="assets/images/prdct-details/ps5-v03.jpg"  width='100%' alt="PS5-Console">
+                  </div>
+                  <div class="small-img-col">
+                    <img class="small-img" src="assets/images/prdct-details/ps5-v04.jpg"  width='100%' alt="PS5-Console">
+                    </div>
+          </div>
+        </div>
+        <div class="col-2"> 
+          <p>Home / Products / PlayStation Section / PS5</p>
+          <h1>Sony PlayStation 5 PS5 Console</h1>
+          <h4>800.00 JOD</h4>
+          <select name="tsize" id="tsize">
+            <option value="Select Size">Select Size</option>
+            <option value="XXL">XXL</option>
+            <option value="XL">XL</option>
+            <option value="L">L</option>
+            <option value="M">M</option>
+          </select>
+          <input type="number" value="1">
+          <a href="" class="p-btn">Add to Cart</a>
+          <h3>Product Details<i class="fa fa-indent"></i> </h3>
+          <br>
+          <p>Lightning Speed - Harness the power of a custom CPU, GPU, and SSD with Integrated I/O that rewrite the rules of what a PlayStation console can do.<br>
+            Stunning Games - Marvel at incredible graphics and experience new PS5 features.<br>
+            Breathtaking Immersion - Discover a deeper gaming experience with support for haptic feedback, adaptive triggers, and 3D Audio technology.</p>
+        </div>
+      </div>
+</div>
+  <!--JS for Product Gallery----------->
+    <script>
+      var ProductImg = document.getElementById("ProductImg");
+      var SmallImg = document.getElementsByClassName("small-img");
+
+      SmallImg[0].onclick = function(){
+          ProductImg.src = SmallImg[0].src;
+      }
+      SmallImg[1].onclick = function(){
+          ProductImg.src = SmallImg[1].src;
+      }
+      SmallImg[2].onclick = function(){
+          ProductImg.src = SmallImg[2].src;
+      }
+      SmallImg[3].onclick = function(){
+          ProductImg.src = SmallImg[3].src;
+      }
+
+    </script>
+
+    <!-- End Product-Details Area -->
+
+    <!-- Start Related-Products Area -->
+  <section class="main-products">
+                <!-- section title -->
+                        <div class="section-title">
+                          <h2 class="title">Related Products</h2>
+                      </div>
+                <!-- /section title -->
+            <div class="prdct-slider2">
+              <ul class="autoWidth cs-hidden">
+              <!--1------------------------------------>	
+              <li class="item-a">
+            <!--box-slider--------------->
+              <div class="box-slider">
+              <!--img-box---------->
+              <div class="slide-img">
+              <img src="assets/images/products/ps5.jpg" alt="1">
+              <!--overlayer---------->
+              <div class="overlay">
+              <!--buy-btn------>	
+              <a href="#" class="buy-btn">Add To Cart</a>	
+              </div>
+              </div>
+              <!--detail-box--------->
+              <div class="detail-box">
+              <!--type-------->
+              <div class="type">
+              <a href="product-details.html">Sony PlayStation 5 PS5 Console</a>
+              <span>Free Shipping</span>
+              </div>
+              <!--price-------->
+              <a href="product-details.html" class="price">800JD</a>
+                
+              </div>
+              </div>		
+            </li>
+              <!--2------------------------------------>	
+              <li class="item-b">
+            <!--box-slider--------------->
+              <div class="box-slider">
+              <!--img-box---------->
+              <div class="slide-img">
+              <img src="assets/images/products/ps4.jpg" alt="2">
+              <!--overlayer---------->
+              <div class="overlay">
+              <!--buy-btn------>	
+              <a href="#" class="buy-btn">Add To Cart</a>	
+              </div>
+              </div>
+              <!--detail-box--------->
+              <div class="detail-box">
+              <!--type-------->
+              <div class="type">
+              <a href="#">Sony PlayStation 4 Slim 1TB Console</a>
+              <span>Free Shipping</span>
+              </div>
+              <!--price-------->
+              <a href="#" class="price">300JD</a>
+                
+              </div>
+              
+              </div>		
+            </li>
+              <!--3------------------------------------>	
+              <li class="item-c">
+            <!--box-slider--------------->
+              <div class="box-slider">
+              <!--img-box---------->
+              <div class="slide-img">
+              <img src="assets/images/products/ds51.jpg" alt="3">
+              <!--overlayer---------->
+              <div class="overlay">
+              <!--buy-btn------>	
+              <a href="#" class="buy-btn">Add To Cart</a>	
+              </div>
+              </div>
+              <!--detail-box--------->
+              <div class="detail-box">
+              <!--type-------->
+              <div class="type">
+              <a href="#">PlayStation 5 DualSense Wireless Controller</a>
+              <span>Free Shipping</span>
+              </div>
+              <!--price-------->
+              <a href="#" class="price">65JD</a>
+                
+              </div>
+              
+              </div>		
+            </li>
+              <!--4------------------------------------>	
+              <li class="item-d">
+            <!--box-slider--------------->
+              <div class="box-slider">
+              <!--img-box---------->
+              <div class="slide-img">
+              <img src="assets/images/products/ds4.jpg" alt="4">
+              <!--overlayer---------->
+              <div class="overlay">
+              <!--buy-btn------>	
+              <a href="#" class="buy-btn">Add To Cart</a>	
+              </div>
+              </div>
+              <!--detail-box--------->
+              <div class="detail-box">
+              <!--type-------->
+              <div class="type">
+              <a href="#">PlayStation 4 DualShock Wireless Controller</a>
+              <span>Free Shipping</span>
+              </div>
+              <!--price-------->
+              <a href="#" class="price">$27</a>
+                
+              </div>
+              
+              </div>		
+            </li>
+              <!--5------------------------------------>	
+              <li class="item-e">
+            <!--box-slider--------------->
+              <div class="box-slider">
+              <!--img-box---------->
+              <div class="slide-img">
+              <img src="images/5.jpg" alt="5">
+              <!--overlayer---------->
+              <div class="overlay">
+              <!--buy-btn------>	
+              <a href="#" class="buy-btn">Add To Cart</a>	
+              </div>
+              </div>
+              <!--detail-box--------->
+              <div class="detail-box">
+              <!--type-------->
+              <div class="type">
+              <a href="#">Rabbed Cardigan</a>
+              <span>Free Shipping</span>
+              </div>
+              <!--price-------->
+              <a href="#" class="price">$26</a>
+                
+              </div>
+              
+              </div>		
+            </li>
+              <!--6------------------------------------>	
+              <li class="item-f">
+            <!--box-slider--------------->
+              <div class="box-slider">
+              <!--img-box---------->
+              <div class="slide-img">
+              <img src="images/6.jpg" alt="6">
+              <!--overlayer---------->
+              <div class="overlay">
+              <!--buy-btn------>	
+              <a href="#" class="buy-btn">Add To Cart</a>	
+              </div>
+              </div>
+              <!--detail-box--------->
+              <div class="detail-box">
+              <!--type-------->
+              <div class="type">
+              <a href="#">Rabbed Cardigan</a>
+              <span>Free Shipping</span>
+              </div>
+              <!--price-------->
+              <a href="#" class="price">$30</a>
+                
+              </div>
+              </div>		
+            </li>
+            </ul>
+      </div>
+  </section>
+</main>
+  <!-- End Related-Products Area -->            
+
+	<!-- start footer Area -->
+  <footer>
+    <div class="main-content">
+      <div class="left box">
+        <h2>About us</h2>
+        <div class="content">
+          <p>GameStop retail is a video game, consumer electronics, and gaming merchandise retailer.<br> 
+            Proudly we're the world’s largest retail gaming and trade-in destination for Xbox, PlayStation, and PC games, systems, consoles & accessories.</p>
+          <div class="social">
+            <h2>Follow Us</h2><br>
+            <a href="https://www.facebook.com/GameStop" target="_blank"><span class="fab fa-facebook-f"></span></a>
+            <a href="https://twitter.com/GameStop" target="_blank"><span class="fab fa-twitter"></span></a>
+            <a href="https://www.instagram.com/gamestop/?hl=en" target="_blank"><span class="fab fa-instagram"></span></a>
+            <a href="https://www.youtube.com/c/GameStopTV" target="_blank"><span class="fab fa-youtube"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="center box">
+        <h2>Quick Links</h2>
+        <div class="content">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Login/Register</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Products Showcase</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="right box">
+        <h2>Contact us</h2>
+        <div class="content">
+          <div class="place">
+            <span class="fas fa-map-marker-alt"></span>
+            <span class="text">Telaa' Al Ali,  Amman,  Jordan</span>
+          </div>
+          <div class="phone">
+            <span class="fas fa-phone-alt"></span>
+            <span class="text"><a href="tel:1-800-883-8895">1-800-883-8895</a></span>
+          </div>
+          <div class="email">
+            <span class="fas fa-envelope"></span>
+            <span class="text"><a href="mailto:care@gamestop.com">care@gamestop.com</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <center>
+        <span class="credit">Made With <span class="heart">❤</span> By <a href="https://www.linkedin.com/in/hamza-alhabash" target="_blank">Hamza Al-Habash</a> | </span>
+        <span class="far fa-copyright"></span><span> 2022 All rights reserved.</span>
+      </center>
+    </div>
+  </footer>
+
+	<!-- End footer Area -->
+
+  <!--script-link----------->
+   <script type="text/javascript" src="assets/js/script.js"></script>
+
+</body>
+</html>
